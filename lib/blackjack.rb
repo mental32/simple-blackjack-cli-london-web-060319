@@ -51,6 +51,10 @@ def runner
 
   score = initial_round  
 
-  
+  until score > 21 do
+    score = hit?(score)
+    display_card_total(score)
+  end
 
+  end_game
 end
