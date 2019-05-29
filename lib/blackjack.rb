@@ -23,10 +23,9 @@ def end_game(n)
 end
 
 def initial_round
-  a = deal_card
-  b = deal_card
-
-  display_card_total(a + b)
+  sum = deal_card + deal_card
+  display_card_total(sum)
+  sum
 end
 
 def hit?(a)
@@ -50,6 +49,6 @@ end
 def runner
   welcome
 
-  
+  score = initial_round  
 
 end
