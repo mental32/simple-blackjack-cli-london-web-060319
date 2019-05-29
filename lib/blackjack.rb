@@ -29,6 +29,7 @@ def initial_round
 end
 
 def hit?(a)
+  prompt_user
   o = get_user_input
 
   if o == 'h'
